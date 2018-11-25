@@ -1,0 +1,46 @@
+@mixin buttonShadow {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+@mixin buttonTransition {
+  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
+    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
+    background-color 2s, transform 0.5s;
+}
+
+#create-topic.btn-default {
+  border-radius: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 999;
+  padding: 24px 20px 22px 5px;
+  background-color: $tertiary;
+  color: $tertiary;
+  white-space: nowrap;
+  text-indent: 7px;
+  @include buttonShadow;
+  overflow: hidden;
+  width: 63px;
+  height: 63px;
+  @include buttonTransition;
+  font-size: 1.1487em;
+}
+
+#create-topic.btn-default .fa-plus {
+  color: white;
+}
+
+#create-topic.btn-default:hover {
+  text-indent: 8px;
+  width: 190px;
+  color: white;
+}
+
+.rtl {
+  #create-topic.btn-default {
+    right: initial;
+    left: 50px;
+    padding: 24px 5px 22px 20px;
+  }
+}
