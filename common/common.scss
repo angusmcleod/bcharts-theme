@@ -12,3 +12,21 @@
 .topic-meta-data {
   padding: 15px 0 0 15px;
 }
+
+.d-header .title-wrapper {
+  flex-wrap: wrap;
+}
+
+.extra-info {
+  .badge-wrapper.bullet {
+    span.badge-category-bg {
+      height: 9px;
+      width: 9px;
+    }
+
+    .badge-category {
+      min-height: initial;
+      padding: 0 0 0 5px;
+    }
+  }
+}
