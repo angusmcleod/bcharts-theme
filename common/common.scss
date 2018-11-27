@@ -17,8 +17,11 @@
   flex-wrap: wrap;
 }
 
-.extra-info {
-  .badge-wrapper.bullet {
+.d-header .extra-info-wrapper {
+  .badge-wrapper {
+    margin-right: 8px;
+    margin-left: 0;
+
     span.badge-category-bg {
       height: 9px;
       width: 9px;
