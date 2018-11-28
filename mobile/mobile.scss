@@ -15,12 +15,14 @@
 }
 
 #reply-control .d-editor-button-bar .btn {
-  padding: 7px;
+  padding: 5px;
+  font-size: 12px;
 }
 
 #reply-control.open {
   max-height: initial;
   min-height: initial;
+  height: 300px;
 }
 
 #reply-control.draft {
@@ -43,4 +45,10 @@
 .bootbox.modal {
   -webkit-transform: initial;
   transform: initial;
+}
+
+#reply-control .composer-controls-rating .rating-container {
+  border: none;
+  margin-bottom: 0;
+  padding: 10px 15px;
 }
